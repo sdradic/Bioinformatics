@@ -18,11 +18,11 @@ def run_huffman_compression(sequence):
     compressed_sequence, codeword_table = huffman_compress(sequence)
     ratio = '%.5f' % (len(compressed_sequence) / len(sequence))
     print('Compressed sequence length: %d' % len(compressed_sequence))
-    print('Codeword table length: %d' % len(codeword_table))
+    # print('Codeword table length: %d' % len(codeword_table))
     print('Compression ratio: %.5f' % (len(compressed_sequence) / len(sequence)))
-    print('Codeword table size: %.2f' % (len(codeword_table) * 8 / len(sequence)))
+    # print('Codeword table size: %.2f' % (len(codeword_table) * 8 / len(sequence)))
     print('Compression efficiency: %.2f' % (len(compressed_sequence) / (len(codeword_table) * 8)))
-    print('Compression efficiency: %.2f' % (len(compressed_sequence) / (len(codeword_table) * 8) / len(sequence)))
+    # print('Compression efficiency: %.2f' % (len(compressed_sequence) / (len(codeword_table) * 8) / len(sequence)))
     return ratio
 
 def run_lzw_compression(sequence):
